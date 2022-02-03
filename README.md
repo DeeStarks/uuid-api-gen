@@ -6,7 +6,7 @@ A simple API that randomly generates UUID and returns a key-value pair, with the
 - `mkdir uuid-api`
 - `cd uuid-api && pipenv shell` to create a virtual environment. Note: You can also use your preferred virtual environment manager.
 - Clone repo: `git clone https://github.com/DeeStarks/uuid-api-gen.git`
-- `cd uuid_api`
+- `cd uuid-api-gen`
 - `pip install -r requirements.txt`
 - `python manage.py runserver`
 
