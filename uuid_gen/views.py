@@ -10,6 +10,6 @@ def list_to_dict(data: list) -> dict:
 def uuid(request):
     uuidObj = models.UUID.objects
     uuidObj.create()
-    uuidSer = serializers.UUIDSerializer(uuidObj, many=True)
+    uuidSer = serializers.UUIDSerializer(uuidObj.order_by('-created_at'), many=True)
     data = list_to_dict(data=uuidSer.data)
     return Response(data, status=200)
